@@ -3,6 +3,21 @@
   src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
+@font-face {
+  font-family: Inter-Bold;
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-ExtraBold;
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,13 +36,16 @@ button {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 100px 10%;
+  padding: 70px 30px;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
   cursor: pointer;
+  margin-right: auto;
 }
 
 .nav_links {
@@ -44,5 +62,163 @@ header {
 }
 
 .nav_links li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Container-Read.More {
+  display: flex;
+  flex-direction: column;
+}
+
+.Dec {
+  width: 920px;
+  height: 330px;
+}
+
+.Container-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.Bottom {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.The.Bright {
+  font-family: "Inter-ExtraBold";
+  font-size: 30px;
+  line-height: 60px;
+  padding-right: 200px;
+}
+
+.Read-T {
+  font-family: "Inter-Regular";
+  line-height: 25px;
+}
+
+.Read-more {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  letter-spacing: 5px;
+  margin-top: 40px;
+  color: hsl(36, 100%, 99%);
+  font-family: "Inter-Regular";
+  width: 200px;
+  height: 40px;
+}
+
+.Container-New {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 25px;
+  padding-bottom: 0px;
+}
+
+.New {
+  font-family: "Inter-ExtraBold";
+  color: hsl(35, 77%, 62%);
+}
+.New-T {
+  font-family: "Inter-Regular";
+  color: hsl(234, 5%, 60%);
+
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid hsl(236, 13%, 42%);
+}
+
+h2 {
+  font-family: "Inter-Bold";
   transition: all 0.3s ease 0s;
+  padding-top: 40px;
+}
+
+h2:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+.New-TL {
+  font-family: "Inter-Regular";
+  color: hsl(234, 5%, 60%);
+
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.Container-Wiki {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0px;
+  padding-top: 60px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0px;
+}
+
+.icon2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+}
+
+.icon3 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+}
+
+.img-i {
+  width: 100px;
+  margin-right: 25px;
+  height: 110px;
+}
+
+.Container-M {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.First-text {
+  padding-right: 50px;
+}
+.IconList {
+  font-family: Inter-Bold;
+  padding-top: 0;
+  color: hsl(234, 5%, 60%);
+}
+
+h3 {
+  font-family: Inter-Bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s ease 0s;
+}
+
+h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.TextList {
+  font-family: "Inter-Regular";
+  color: hsl(234, 5%, 60%);
+  line-height: 20px;
+  font-size: 15px;
 }
